@@ -1,0 +1,3 @@
+[ 2026-03-20 10:11:45,547 ] 6 root - INFO - hi
+[ 2026-03-20 10:11:45,675 ] 23 root - INFO - reading mysql database
+[ 2026-03-20 10:11:45,800 ] 29 root - INFO - data ingestion is completed

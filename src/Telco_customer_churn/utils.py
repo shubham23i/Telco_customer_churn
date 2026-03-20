@@ -1,5 +1,7 @@
 import os
 import sys
+import warnings
+warnings.filterwarnings("ignore", category=UserWarning)
 import pymysql
 import pandas as pd
 from src.Telco_customer_churn.logger import logging
@@ -21,7 +23,9 @@ def read_sql_data():
             passwd=password,
             database=database
         )
-        logging.info('connection established', mydb)
-        df=pd.read_sql_query('select * from telco_customer',mydb)
+        logging.info(f'connection established, {mydb}')
+        df = pd.read_sql_query('select * from telco_customer', mydb)
+        
+        return df
     except Exception as e:
         raise CustomException(e,sys)
