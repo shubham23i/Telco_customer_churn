@@ -17,6 +17,11 @@ list_of_file=[
     f"src/{project_name}/exception.py",
     f"src/{project_name}/logger.py",
     f"src/{project_name}/utils.py",
+    f"src/{project_name}/notebook/data/raw.csv",
+    f"src/{project_name}/notebook/EDA.ipynb",
+    f"src/{project_name}/notebook/model_training.ipynb",
+    
+    
     "app.py",
     "dockerfile.py",
     "dockerfile.py",
