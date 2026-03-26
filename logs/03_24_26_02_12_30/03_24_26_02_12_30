@@ -1,0 +1,7 @@
+[ 2026-03-24 12:02:32,668 ] 7 root - INFO - hi
+[ 2026-03-24 12:02:32,668 ] 27 root - INFO - connection established, <pymysql.connections.Connection object at 0x000002123BDA7190>
+[ 2026-03-24 12:02:32,808 ] 23 root - INFO - reading mysql database
+[ 2026-03-24 12:02:32,888 ] 29 root - INFO - data ingestion is completed
+[ 2026-03-24 12:02:32,952 ] 58 root - INFO - reading the train and test datasets
+[ 2026-03-24 12:02:32,952 ] 43 root - INFO - categorical columns: ['Unnamed: 0', 'SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges']
+[ 2026-03-24 12:02:32,952 ] 44 root - INFO - numerical columns: ['customerID', 'gender', 'Partner', 'Dependents', 'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod']

@@ -1,0 +1,8 @@
+[ 2026-03-24 12:07:26,321 ] 7 root - INFO - hi
+[ 2026-03-24 12:07:26,336 ] 27 root - INFO - connection established, <pymysql.connections.Connection object at 0x000001EFE4C67F10>
+[ 2026-03-24 12:07:26,460 ] 23 root - INFO - reading mysql database
+[ 2026-03-24 12:07:26,552 ] 29 root - INFO - data ingestion is completed
+[ 2026-03-24 12:07:26,602 ] 59 root - INFO - reading the train and test datasets
+[ 2026-03-24 12:07:26,602 ] 43 root - INFO - categorical columns: ['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod']
+[ 2026-03-24 12:07:26,602 ] 44 root - INFO - numerical columns: ['tenure', 'MonthlyCharges', 'TotalCharges']
+[ 2026-03-24 12:07:26,602 ] 72 root - INFO - applying preprocessing on training and test datasets

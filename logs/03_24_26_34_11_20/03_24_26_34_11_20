@@ -1,0 +1,4 @@
+[ 2026-03-24 11:34:22,572 ] 7 root - INFO - hi
+[ 2026-03-24 11:34:22,581 ] 27 root - INFO - connection established, <pymysql.connections.Connection object at 0x0000015F0B525D10>
+[ 2026-03-24 11:34:22,692 ] 23 root - INFO - reading mysql database
+[ 2026-03-24 11:34:22,772 ] 29 root - INFO - data ingestion is completed

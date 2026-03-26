@@ -1,0 +1,11 @@
+[ 2026-03-26 10:51:13,295 ] 8 root - INFO - hi
+[ 2026-03-26 10:51:13,302 ] 29 root - INFO - connection established, <pymysql.connections.Connection object at 0x00000216A23A10D0>
+[ 2026-03-26 10:51:13,419 ] 23 root - INFO - reading mysql database
+[ 2026-03-26 10:51:13,547 ] 29 root - INFO - data ingestion is completed
+[ 2026-03-26 10:51:13,734 ] 66 root - INFO - reading the train and test datasets
+[ 2026-03-26 10:51:13,767 ] 46 root - INFO - categorical columns: ['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod']
+[ 2026-03-26 10:51:13,769 ] 47 root - INFO - numerical columns: ['tenure', 'MonthlyCharges', 'TotalCharges']
+[ 2026-03-26 10:51:13,773 ] 87 root - INFO - applying preprocessing on training and test datasets
+[ 2026-03-26 10:51:13,891 ] 95 root - INFO - saved preprocessing obj
+[ 2026-03-26 10:51:13,894 ] 24 root - INFO - splitting training and test input data
+[ 2026-03-26 10:51:31,816 ] 115 root - INFO - best model in both training and test dataset
