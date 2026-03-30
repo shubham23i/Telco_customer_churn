@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Churn Prediction</title>
+    <style>
+    body {
+        font-family: Arial;
+        background-color: #f4f4f4;
+        padding: 20px;
+    }
+    form {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: 400px;
+    }
+    h1 {
+        color: #333;
+    }
+    button {
+        padding: 10px;
+        background: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+    <h1>Telco Churn Prediction</h1>
+    <form action="/predict" method="post">
+        Gender:
+        <select name="gender">
+            <option>Male</option>
+            <option>Female</option>
+        </select><br><br>
+
+        Senior Citizen:
+        <select name="SeniorCitizen">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br><br>
+
+        Monthly Charges: <input type="number" step="0.01" name="MonthlyCharges" required><br><br>
+        Total Charges: <input type="number" step="0.01" name="TotalCharges" required><br><br>
+
+        Partner:
+        <select name="Partner"><option>Yes</option><option>No</option></select><br><br>
+
+        Dependents:
+        <select name="Dependents"><option>Yes</option><option>No</option></select><br><br>
+
+        PhoneService:
+        <select name="PhoneService"><option>Yes</option><option>No</option></select><br><br>
+
+        MultipleLines:
+        <select name="MultipleLines">
+            <option>No</option><option>Yes</option><option>No phone service</option>
+        </select><br><br>
+
+        InternetService:
+        <select name="InternetService">
+            <option>DSL</option><option>Fiber optic</option><option>No</option>
+        </select><br><br>
+
+        OnlineSecurity:
+        <select name="OnlineSecurity">
+            <option>Yes</option><option>No</option><option>No internet service</option>
+        </select><br><br>
+
+        Tenure: <input type="number" name="tenure" required><br><br>
+
+        OnlineBackup:
+        <select name="OnlineBackup">
+        <option>Yes</option><option>No</option><option>No internet service</option>
+        </select><br><br>
+
+        DeviceProtection:
+        <select name="DeviceProtection">
+        <option>Yes</option><option>No</option><option>No internet service</option>
+        </select><br><br>
+
+        TechSupport:
+        <select name="TechSupport">
+        <option>Yes</option><option>No</option><option>No internet service</option>
+        </select><br><br>
+
+        StreamingTV:
+        <select name="StreamingTV">
+        <option>Yes</option><option>No</option><option>No internet service</option>
+        </select><br><br>
+
+        StreamingMovies:
+        <select name="StreamingMovies">
+        <option>Yes</option><option>No</option><option>No internet service</option>
+        </select><br><br>
+
+        Contract:
+        <select name="Contract">
+        <option>Month-to-month</option><option>One year</option><option>Two year</option>
+        </select><br><br>
+
+        PaperlessBilling:
+        <select name="PaperlessBilling">
+        <option>Yes</option><option>No</option>
+        </select><br><br>
+
+        PaymentMethod:
+        <select name="PaymentMethod">
+        <option>Electronic check</option>
+        <option>Mailed check</option>
+        <option>Bank transfer (automatic)</option>
+        <option>Credit card (automatic)</option>
+        </select><br><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction_text %}
+     {% if prediction_text == "Churn" %}
+    <h2 style="color:red;">⚠️ Customer is likely to Churn</h2>
+    {% elif prediction_text == "No Churn" %}
+        <h2 style="color:green;">✅ Customer will Stay</h2>
+    {% endif %}
+    {% endif %}
+
+</body>
+</html>

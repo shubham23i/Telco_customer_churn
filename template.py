@@ -20,8 +20,8 @@ list_of_file=[
     f"src/{project_name}/notebook/data/raw.csv",
     f"src/{project_name}/notebook/EDA.ipynb",
     f"src/{project_name}/notebook/model_training.ipynb",
-    
-    
+    f"templates/index.html",
+    "predict_app.py",
     "app.py",
     "dockerfile.py",
     "dockerfile.py",

@@ -1,4 +1,8 @@
-pandas 
-numpy 
-os
-pathlib
+flask
+pandas
+numpy
+scikit-learn
+xgboost
+catboost
+mlflow
+dagshub
